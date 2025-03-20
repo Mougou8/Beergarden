@@ -2,20 +2,31 @@
 *{
     margin: 0;
     padding: 0;
+    /*  */
     box-sizing: border-box;
 }
 /* Première section avec deux images superposées */
-.figure{
+.hero {
     width: 100%;
     height: 100vh;
     /* Position: relative permet de décaler l'élément par rapport à sa position normale. */
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     /* display: flex; */
     justify-content: center;
     align-items: center;
     /* Image de fond */
     background: url('image/h5-revolution-img-1.jpg')
     no-repeat center center /cover;
+}
+
+.hero .logo {
+    position: absolute;
+    /* A ajuster la taille selon besoin*/
+    width: 60%;
+    max-width: 600px;
+    /* A ajuster l'opacité si nécessaire */
+    opacity: 0.9;
 }
 
 
@@ -31,6 +42,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 .navbar .logo img {
     height: 20px;
     /* margin-left: 0; */
@@ -97,9 +110,9 @@ nav ul li a img {
     --text-color: White;
     --font-main: 'Oswald', sans-serif;
 }
- h1 {
+ /* h1 { */
     
- }
+ /* } */
  .gallery {
     display: flex;
     justify-content: center;
@@ -149,11 +162,11 @@ nav ul li a img {
  .image-container:hover img {
     transform: scale(1.1);
  }
-
+/* Effet zoom */
  .image-container:hover .overlay {
     opacity: 1;
  }
-
+/* Rotation de la croix */
  .image-container:hover .cross {
     transform: rotate(90deg);
  }
@@ -167,17 +180,21 @@ nav ul li a img {
 
  .service {
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
+    transition: background-color 0.3s, color 0.3s;
  }
 
  .service img {
     width: 80px;
     height: 80px;
-    transition: filter 0.3s ease-in-out;
+    /* transition: filter 0.3s ease-in-out; */
+    transition: background-color 0.3s, color 0.3s;
  }
 
  .service:hover img {
-    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
+    /* filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg); */
+    color: #ffcc00;
+
  }
 
  .service p {
@@ -185,11 +202,41 @@ nav ul li a img {
     font-size: 14px;
  }
 
+.parallaxe{
+    background-image: url('image/h5-parallax-img-1.jpg');
+    height: 100px;
+    background-attachment:fixed ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+} 
+
+.overlay {
+    /* Rendre sombre l'image pour améliorer la lisibité du texte */
+     background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+ } 
+ 
 
 
 
-
-
+.footer img {
+    background-color: #333;
+    /* color: #fff; */
+    /* text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
 
 
 
