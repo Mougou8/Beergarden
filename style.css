@@ -21,12 +21,12 @@
 }
 
 .hero .logo {
-    position: absolute;
+    /* position: absolute; */
     /* A ajuster la taille selon besoin*/
-    width: 60%;
-    max-width: 600px;
+    width: 50%;
+    /* max-width: 600px; */
     /* A ajuster l'opacité si nécessaire */
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 
 
@@ -38,8 +38,7 @@
   padding: 15px 0;
     z-index: 1000;
     display: flex;
-    /* justify-content:space-around ; */
-    justify-content: center;
+     justify-content:space-around ; 
     align-items: center;
 }
 
@@ -110,9 +109,40 @@ nav ul li a img {
     --text-color: White;
     --font-main: 'Oswald', sans-serif;
 }
- /* h1 { */
-    
- /* } */
+
+
+
+ h1 {
+    /* border-bottom: 2px solid black; */
+    display: inline-block;
+    padding-bottom: 5px;
+ }
+ h2 {
+    font-family: "Times new roman" serif;
+    font-style: italic;
+ }
+
+ p {
+    font-family: "Ralway"sans-serif;
+ }
+ 
+ .figure {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url('image/h5-revolution-img-1.jpg')
+    no-repeat center center /cover;
+ }
+
+ .section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+ }
+
  .gallery {
     display: flex;
     justify-content: center;
@@ -137,7 +167,7 @@ nav ul li a img {
     display: block;
     transition:transform 0.3s ease ;
  }
-
+/* Overlay sert à superposer une image ou un texte */
  .overlay {
     position: absolute;
     top: 0;
@@ -238,6 +268,25 @@ nav ul li a img {
     width: 100%; */
 }
 
+.description{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description>div{
+    width :50%
+}
+ .block {
+    
+ }
+   
+
+   
+
+
+
+  
 
 
 
