@@ -124,7 +124,7 @@ nav ul li a img {
 
  p {
     font-family: "Ralway"sans-serif;
- }
+ } */
  
  .figure {
     width: 100%;
@@ -232,7 +232,105 @@ nav ul li a img {
     font-size: 14px;
  }
 
-.parallaxe{
+.overlay {
+    /* Rendre sombre l'image pour améliorer la lisibité du texte */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+ } 
+  
+.description{
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description>div{
+    width :50%
+} 
+
+
+.block {
+    width: 50%;
+     
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: inline-block; */
+    font-size:35px ;
+    padding-top: 150px;
+ }
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Times new roman" serif;
+    font-style: italic;
+    font-size: small;
+    padding-bottom: 15px;
+}
+
+ p {
+    text-align: center;
+    font-family: "Ralway"sans-serif;
+ }
+
+ .button {
+    text-align: center;
+}
+
+ h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    padding-top: 150px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Times new roman" serif;
+    font-style: italic;
+    font-size: small;
+    padding-bottom: 15px;
+}
+p {
+    text-align: center;
+    font-family: "Ralway"sans-serif;
+}
+
+.button {
+    text-align: center;
+}
+    
+.description-bistro1 {
+    background-image: url('image/h5-el-holder-img-1-1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.figure {
+    max-width: 100%;
+    height:auto ;
+}
+
+.description-bistro2 {
+    background-image: url('image/h5-el-holder-img-2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.figure {
+    max-width: 100%;
+    height:auto ;
+}
+
+.parallax{
     background-image: url('image/h5-parallax-img-1.jpg');
     height: 100px;
     background-attachment:fixed ;
@@ -248,49 +346,26 @@ nav ul li a img {
     position: relative;
 } 
 
-.overlay {
-    /* Rendre sombre l'image pour améliorer la lisibité du texte */
-     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 5px;
- } 
+.map-container{
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
  
-
-
-
-.footer img {
+.footer  {
     background-color: #333;
-    /* color: #fff; */
-    /* text-align: center;
+    color: #fff; */
+     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 100%; */
+    width: 100%;
+} 
+.footer img {
+    width: 50%;
 }
-
-.description{
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.description>div{
-    width :50%
-}
- .block {
-    
- }
-   
-
-   
-
-
-
-  
-
-
-
-
-
 
 
