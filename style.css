@@ -217,17 +217,17 @@ nav ul li a img {
  .service {
     text-align: center;
     /* transition: transform 0.3s ease-in-out; */
-    transition: background-color 0.3s, color 0.3s;
- }
-
- .service img {
-    width: 80px;
-    height: 80px;
-    /* transition: filter 0.3s ease-in-out; */
     /* transition: background-color 0.3s, color 0.3s; */
  }
 
- .service:hover img {
+ .service img {
+    width: 60px;
+    height: 60px;
+    /* transition: filter 0.3s ease-in-out; */
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .service img:hover{
     /* filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg); */
     color: #ffcc00;
  }
@@ -236,7 +236,7 @@ nav ul li a img {
     padding-bottom: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
-.service:hover h2 {
+.service h2 :hover{
     color: #ffcc00;
 }
  .service p {
