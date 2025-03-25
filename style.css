@@ -22,14 +22,15 @@
 
 .hero .container img {
     position: absolute;
-    margin: auto;
+    /* margin: auto; */
     padding-top: 10em;
+    /* padding-left: 10em; */
     /* justify-content: center; */
     /* align-items: center; */
     /* align-content: center; */
     /* A ajuster la taille selon besoin*/
-    /* width: 50%; */
-    /* max-width: 600px; */
+    width: 30%;
+    /* max-width: 600%; */
     /* A ajuster l'opacité si nécessaire */
     /* opacity: 0.9; */
 }
@@ -105,14 +106,17 @@ nav ul li a img {
 
 }
 
-.citation{
+.citation p{
     background: rgba(160, 118, 104, 0.674);
     color: white;
-    font-size: 47px;
-    padding: 20px;
+    font-size:37px;
+    padding:15px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    
+
+
+ 
+
 }
 /* Utilisation des variables CSS */
 :root {
@@ -124,7 +128,7 @@ nav ul li a img {
 
 
  h1 {
-    /* border-bottom: 2px solid black; */
+    
     display: inline-block;
     padding-bottom: 5px;
  }
@@ -144,7 +148,7 @@ nav ul li a img {
  }
  .description button:hover {
     color: #ffcc00;
- }
+ } 
 
  
  .figure {
@@ -307,7 +311,7 @@ h1 {
     align-items: center;
     font-family: "Times new roman" serif;
     font-style: italic;
-    font-size: small;
+    font-size: 10px;
     padding-bottom: 15px;
 } 
 
@@ -421,13 +425,14 @@ p {
         transform: translate(-50%, -50%); 
  }   */
     /* A voir pour finir  */
- .image-stack {
+ /* .image-stack { */
+ .map-container {
     position: relative;
-    width: 300px; /* Ajustez la largeur selon vos besoins */
+    width: 100%; /* Ajustez la largeur selon vos besoins */
     height: 200px; /* Ajustez la hauteur selon vos besoins */
 }
 
-.bottom-image {
+.bottom-map {
     position: absolute;
     top: 0;
     left: 0;
@@ -436,12 +441,14 @@ p {
     z-index: 1;
 }
 
-.top-image {
+.top-pointer {
     position: absolute;
+    color:red;
+    align-content: center;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 25px;
+    height: 25px;
     z-index: 2;
     opacity: 0.5; /* Ajustez l'opacité pour voir les deux images */
 }
