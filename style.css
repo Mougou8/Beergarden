@@ -179,6 +179,7 @@ nav ul li a img {
     flex-wrap: wrap;
 }
 
+
 .description>div{
     width :50%
 } 
@@ -317,14 +318,6 @@ p {
     
 }
 
-@media screen and (max-width: 320px) {
- .gallery {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-}
-
-}
 
 .image-container {
     position: relative;
@@ -406,14 +399,7 @@ p {
     margin-top: 50px;
  }
  
- @media screen and (max-width: 320px) {
- .services {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-} 
 
-}
      
     
     
@@ -516,4 +502,45 @@ p {
   
 }
 
+@media screen and (max-width: 640px) {
+    .container img {
+        /* position: absolute; */
+        /* padding-top: 10em; */
+        /* width: 30%; */
+        /* display:inline-block; */
+        display: flex;
+        /* left: 500; */
+        right: 300px;
+        padding-top: 250px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+    .description {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+}
  
+@media screen and (max-width: 640px) {
+    .gallery {
+       flex-direction: column;
+       width: 100%
+       justify-content: center;
+   }
+   
+   }
+   @media screen and (max-width: 640px) {
+    .services {
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+   } 
+   
+   }
+  
+   
