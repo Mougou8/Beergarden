@@ -7,14 +7,16 @@
 }
 
 /*Ajout media query  */
-/* 
-header, main, footer {
+
+/* header, main, footer {
     padding: 20px;
     text-align: center;
 } */
 
 /* Media query pour les écrans de taille moyenne (tablettes) */
 /* @media (min-width: 600px) { */
+
+/* Media query pour les écrans de taille petite (phones) */
 /* @media (max-width: 400px){
     main {
         padding: 10px;
@@ -47,18 +49,7 @@ header, main, footer {
     width: 30%;
     display:inline-block;
     left: 500;
-    /* margin: 0 auto; */
-    /* padding-left: 10em; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
-    /* A ajuster la taille selon besoin*/
-    /* text-align: center; */
-    /* height: 100vh; */
-    /* max-width: 600%; */
-    /* A ajuster l'opacité si nécessaire */
-    /* opacity: 0.9; */
-
+   
 }
 /* Ajout Media Query */
 /* @media screen (max-width:320px) {
@@ -100,14 +91,24 @@ header, main, footer {
   display: inline-block;
   transition: background-color 0.3s, color 0.3s;
   font-size: 10px;
+  font-weight: bold;
  font-family: 'Oswald', sans-serif; 
 
 }
-/* .navbar .nav-links img {
-     height: 40px;
+
+/* @media screen (max_width: 320px) {
+    .navbar a {
+        flex-direction: column;
+        align-items: center;
+            }
+    } */
+
+
+.navbar .nav-links img {
+     height: 50px;
      position: absolute;
     
-} */
+}
 
 
 /* Effet au survol des liens */
@@ -313,10 +314,17 @@ p {
     justify-content: center;
     /* gap: 0px; */
     /* margin-top: 20px; */
-   
- }
+    
+}
 
- .image-container {
+/* @media screen and (max-width: 320px) {
+ .gallery {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+} */
+
+.image-container {
     position: relative;
     /* Taille des images */
     /* width: 200px; */
@@ -340,12 +348,18 @@ p {
     flex-basis: 20%;
  }
 
- @media screen and (max-width:320px) {
+/* @media screen and (max-width:320px) {
     .image-container img {
         flex-basis: 100%;
     }
-    
- }
+}
+@media screen and (max-width: 320px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
 /* Overlay sert à superposer une image ou un texte */
  .overlay {
     position: absolute;
@@ -389,7 +403,18 @@ p {
     gap: 20px;
     margin-top: 50px;
  }
+ 
+ /* @media screen and (max-width: 320px) {
+ .services {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+} 
 
+} */
+     
+    
+    
  .service {
     text-align: center;
     /* transition: transform 0.3s ease-in-out; */
@@ -457,58 +482,23 @@ p {
    font-size: 12px;
  }
 
- /* .google map {
+ 
+
+ .google-map {
+    width: 100%;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
- }  */
-   /* .map.container { 
-    position: relative; 
-
-    width: 600px; 
-    height: 400px;
-}  */
-
-/* .pointer  {
-    
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 25px; 
-        height: 25px; 
-        transform: translate(-50%, -50%); 
- }   */
-    /* A voir pour finir  */
- /* .image-stack { */
- /* .map-container { */
-    /* position: relative; */
-    /* width: 100%; Ajustez la largeur selon vos besoins */
-    /* height: 200px; Ajustez la hauteur selon vos besoins */
-/* } */
-
-/* .bottom-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-} */
-/* 
-.top-pointer {
-    position: absolute;
-    color:red;
-    align-content: center;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    z-index: 2;
-    opacity: 0.5; Ajustez l'opacité pour voir les deux images
-} */
+    position: relative;
+     
+ }
+ 
+ .map-container{
+ width: 100%;
+ height: 400px;
+ position: relative;
+ }
 
 .footer  {
     background-color:black;
@@ -525,67 +515,3 @@ p {
 }
 
  
- .google-map {
-    width: 100%;
-    height:auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-     
-}
-
-.map-container{
-width: 100%;
-height: 400px;
-position: relative;
-}
-/* 
-/* /* .map-container iframe{
-    width: 100%;
-    height: 400px; */
-    /* height: 100%; */
-    /* border: 0;
-    filter: brightness(35%);
-}
-
- .map-overlay {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background:rgba(0, 0, 0, 0.3) ;
-
-}
-
- .map-pointer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40px;
-    height: 40px; 
-     background: url('https://upload.wikipedia.org/wikipedia/commons/e/ed/Map_pin_icon.svg') 
-   background:url(image/h1-pin.png) 
-
-    no-repeat center;
-    background-size: cover;
-    transform: translate(-50%,-50%);  
-}    
-
-.mapouter {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    height: 300px;
-    width: 100%;
-}
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important; 
-    height: 560px; */
-    height: 300px;
-    /* width: 820px; */
-    width: 100%;
-        */
-}
