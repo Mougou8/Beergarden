@@ -6,22 +6,6 @@
     box-sizing: border-box;
 }
 
-/*Ajout media query  */
-
-/* header, main, footer {
-    padding: 20px;
-    text-align: center;
-} */
-
-/* Media query pour les écrans de taille moyenne (tablettes) */
-/* @media (min-width: 600px) { */
-
-/* Media query pour les écrans de taille petite (phones) */
-/* @media (max-width: 400px){
-    main {
-        padding: 10px;
-    }
-} */
 
 /* Première section avec deux images superposées */
 .hero {
@@ -51,16 +35,6 @@
     left: 500;
    
 }
-/* Ajout Media Query */
-/* @media screen (max-width:320px) {
-    .contenair img {
-        display: flex;
-        right: 150px;
-        padding-top: 250px ;
-    }
-    
-} */
-
 
 .navbar {
   /* position: sticky; */
@@ -87,7 +61,7 @@
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 14px 10px;
   display: inline-block;
   transition: background-color 0.3s, color 0.3s;
   font-size: 10px;
@@ -111,7 +85,7 @@
     color: #ffcc00;
 }
 
-.navbar ul {
+.navbar .list-group  {
     color: white;
     list-style-type: none;
     /* margin: 0; */
@@ -120,34 +94,37 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar li {
+.navbar .list-group li {
     /* Inversion icônes */
     float: left; 
+
     
    
 
 }
 
-.navbar li a {
+ .navbar .list-group ul li a {
     /* display: block; */
     display: flex;
     text-align: center;
-    padding: 10px 10px;
+
+    padding: 15px 15px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 10px;
     
+    
 }
 
-.navbar li a:hover {
+.navbar .list-group ul li a:hover {
     color: #ffcc00;
 }
-nav ul li a img {
-    height: 50px; /* Ajustez la taille du logo selon vos besoins */
-    width: auto; /* Maintient le ratio d'aspect du logo */
-    
-
-}
+ .navbar .list-group ul li a img { 
+    /* Ajustez la taille du logo selon vos besoins  */
+    height: 30px;
+    /* Maintient le ratio d'aspect du logo */ 
+    width: auto; 
+ }
 
 .citation p{
     background: rgba(160, 118, 104, 0.674);
@@ -156,6 +133,7 @@ nav ul li a img {
     padding:15px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    width: 100%;
 
 
  
@@ -333,7 +311,7 @@ p {
  }
 
  .image-container img {
-    /* width: 100%; */
+    width: 100%;
     /* height: 100%; */
     display: block;
     transition:transform 0.3s ease ;
@@ -392,11 +370,11 @@ p {
  .service {
     text-align: center;
     /* transition: transform 0.3s ease-in-out; */
-    /* transition: background-color 0.3s, color 0.3s; */
+    transition: background-color 0.3s, color 0.3s;
  }
 
  .service img {
-    color: white;
+    /* color: white; */
     width: 50px;
     height: 50px;
     /* transition: filter 0.3s ease-in-out; */
@@ -488,14 +466,28 @@ p {
   
 }
 
-@media screen (max_width: 640px) {
-    .list-group {
-        /* float: column; */
-        flex-direction: column; 
-         align-items: center;
-            }
-    } 
 
+@media screen (max-width: 640px) {
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+}
+
+/* @media screen (max-width: 640px) {
+    .nav ul li a  {
+        float: column;
+        flex-direction: column; 
+        align-items: center;
+        padding: 5px 5px;
+    }
+}  */
+
+@media screen (max-width: 640px) {
+    .citation p {
+        width: 600px;
+    }
+}
 
 
 @media screen and (max-width: 640px) {
